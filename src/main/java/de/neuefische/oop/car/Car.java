@@ -18,8 +18,21 @@ public class Car {
 
     private String emissionRanking;
 
+    private boolean isElectric;
+
+    // Standardkonstruktor = Leerer Konstruktor
+    public Car() {}
+
+
+    // Wenn man Konstruktoren mit Parametern erstellt, BRAUCHT MAN auch den leeren Konstruktor
+    // (wenn man Objekte mit new Car() erstellen will)
     public Car(String color) {
         this.color = color;
+    }
+
+    public Car(String color, String manufacturer) {
+        this.color = color;
+        this.manufacturer = manufacturer;
     }
 
     // Konstruktor = Bauanleitung = Methode die uns ein neues Objekt liefert
@@ -27,8 +40,8 @@ public class Car {
     // Car = Der Klassenname und gleichzeitig der
     // Rückgabewert
     public Car(String color, String manufacturer, int year, String model) {
-        System.out.println("Hallo, I bims der Konstruktor von Car!");
-        System.out.println("ich hab bekommen die werte: " + color + " " + manufacturer);
+//        System.out.println("Hallo, I bims der Konstruktor von Car!");
+//        System.out.println("ich hab bekommen die werte: " + color + " " + manufacturer);
 
         this.color = color;
         this.manufacturer = manufacturer;
@@ -81,5 +94,15 @@ public class Car {
     // wenn man im selben package ist
     public String printCar(){
         return  "[Color: " + color + " Manufacturer:  "+ manufacturer + "  Year:  " +year + "  Model:  "+ model+ "]";
+    }
+
+    @Override
+    public String toString() {
+        return "Car{" +
+                "color='" + color + '\'' +
+                ", manufacturer='" + manufacturer + '\'' +
+                ", year=" + year +
+                ", model='" + model + '\'' +
+                '}';
     }
 }

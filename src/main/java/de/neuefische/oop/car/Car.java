@@ -4,13 +4,13 @@ import java.util.Objects;
 
 // Klasse = Wo man Objekte definiert
 /*
-* Klasse = Bauplan für Objekte = Neuer Typ
-* - Hat Eigenschaften
-* - Hat Methoden
-*
-* - Sollte eine toString Methode beinhalten
-*
-* */
+ * Klasse = Bauplan für Objekte = Neuer Typ
+ * - Hat Eigenschaften
+ * - Hat Methoden
+ *
+ * - Sollte eine toString Methode beinhalten
+ *
+ * */
 public class Car {
     // Eigenschaften von einer Klasse
     private String color;
@@ -23,7 +23,8 @@ public class Car {
     private boolean isElectric;
 
     // Standardkonstruktor = Leerer Konstruktor
-    public Car() {}
+    public Car() {
+    }
 
 
     // Wenn man Konstruktoren mit Parametern erstellt, BRAUCHT MAN auch den leeren Konstruktor
@@ -94,8 +95,8 @@ public class Car {
     // Methoden
     // Protected = Man darauf darauf zugreifen,
     // wenn man im selben package ist
-    public String printCar(){
-        return  "[Color: " + color + " Manufacturer:  "+ manufacturer + "  Year:  " +year + "  Model:  "+ model+ "]";
+    public String printCar() {
+        return "[Color: " + color + " Manufacturer:  " + manufacturer + "  Year:  " + year + "  Model:  " + model + "]";
     }
 
     @Override
@@ -119,5 +120,6 @@ public class Car {
     @Override
     public int hashCode() {
         return Objects.hash(color, manufacturer, year, model, emissionRanking, isElectric);
+//        return 1;
     }
 }

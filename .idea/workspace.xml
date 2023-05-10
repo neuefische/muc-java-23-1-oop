@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="402b84ba-b0fb-4ddc-bc43-92f2b197a446" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/de/neuefische/oop/car/CarTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/neuefische/oop/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/neuefische/oop/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/de/neuefische/oop/car/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/neuefische/oop/car/Car.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -18,6 +19,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -39,6 +41,9 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "create.test.in.the.same.root": "true",
     "git-widget-placeholder": "muslim-kareem",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -48,7 +53,16 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="de.neuefische.oop.car" />
+      <recent name="de.neuefische.oop" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.CarTest.testIfCarsAreEqual">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="de.neuefische.oop.Main" />
       <module name="muc-java-23-1-oop" />
@@ -62,8 +76,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CarTest.testIfCarsAreEqual" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="muc-java-23-1-oop" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="de.neuefische.oop.car.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="de.neuefische.oop.car" />
+      <option name="MAIN_CLASS_NAME" value="de.neuefische.oop.car.CarTest" />
+      <option name="METHOD_NAME" value="testIfCarsAreEqual" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CarTest.testIfCarsAreEqual" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -80,7 +111,7 @@
       <workItem from="1683553499685" duration="7180000" />
       <workItem from="1683703929565" duration="57000" />
       <workItem from="1683704397212" duration="3946000" />
-      <workItem from="1683719765925" duration="8864000" />
+      <workItem from="1683719765925" duration="10221000" />
     </task>
     <servers />
   </component>

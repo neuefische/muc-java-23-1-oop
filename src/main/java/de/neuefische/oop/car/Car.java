@@ -1,5 +1,7 @@
 package de.neuefische.oop.car;
 
+import java.util.Objects;
+
 // Klasse = Wo man Objekte definiert
 /*
 * Klasse = Bauplan für Objekte = Neuer Typ
@@ -104,5 +106,18 @@ public class Car {
                 ", year=" + year +
                 ", model='" + model + '\'' +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Car car = (Car) o;
+        return year == car.year && isElectric == car.isElectric && Objects.equals(color, car.color) && Objects.equals(manufacturer, car.manufacturer) && Objects.equals(model, car.model) && Objects.equals(emissionRanking, car.emissionRanking);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(color, manufacturer, year, model, emissionRanking, isElectric);
     }
 }
